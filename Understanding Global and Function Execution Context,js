@@ -1,0 +1,17 @@
+
+let age = 21;
+
+function displayAge() {
+    console.log("Current age is:", age);
+}
+
+function changeAge() {
+    age = 24;
+    console.log("Age has been updated to:", age);
+}
+
+displayAge();
+
+changeAge();
+
+displayAge();
