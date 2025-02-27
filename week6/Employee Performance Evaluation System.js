@@ -13,13 +13,7 @@ arr= [{ name: "Alice",
 { name: "Eve", 
     tasksCompleted: 7, 
     rating: 2.8 }]
-    // console.log(arr)
-    
-    let performancePriority = {
-                                    "Excellent": 3,
-                                    "Good": 2,
-                                    "Needs Improvement": 1
-    }
+
 
     let narr=arr.filter((ele,i,arr)=>{
          return ele.tasksCompleted>=5
@@ -34,8 +28,16 @@ arr= [{ name: "Alice",
                 ele.performance="need to improve"
                 
                 return ele
-         }).sort((a, b) => performancePriority[b.performanceLevel] - performancePriority[a.performanceLevel]).forEach((employee) => {
-          console.log(`Name: ${employee.name}, Performance: ${employee.performance}`);
          })
-        
+         let obj={
+             needtoimprove:0,
+             Good: 1,
+             Excellent:2,
+         }
+         console.log("need to improve")
+         let newarr= narr.sort(ele.performance)
+         console.log(newarr)
          
+         
+         
+     console.log(narr)
